@@ -1,0 +1,91 @@
+ext {
+    AndroidKtxCore = 'androidx.core:core-ktx:1.10.1'
+
+    AndroidAppcompat = 'androidx.appcompat:appcompat:1.6.1'
+
+    AndroidFragment = 'androidx.fragment:fragment:1.6.2'
+
+    AndroidMaterial = 'com.google.android.material:material:1.9.0'
+
+    AndroidConstraintlayout = 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    AndroidRecyclerview = 'androidx.recyclerview:recyclerview:1.3.2'
+
+    AndroidBroadcast = 'androidx.localbroadcastmanager:localbroadcastmanager:1.1.0'
+
+    AndroidMultidex = 'androidx.multidex:multidex:2.0.1'
+
+    AndroidAnnotation = 'androidx.annotation:annotation:1.7.1'
+
+    AndroidSwiperefreshlayout = 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    AndroidViewPager2 = 'androidx.viewpager2:viewpager2:1.0.0'
+
+    AndroidViewModelKTX = 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+
+    AndroidLiveDataKTX = 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+
+    AndroidLifecycleRuntimeKTX =  'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
+
+    Glide = 'com.github.bumptech.glide:glide:4.15.1'
+
+    Gson = 'com.google.code.gson:gson:2.10.1'
+
+    Okhttp = 'com.squareup.okhttp3:okhttp:4.9.3'
+
+    Okio = 'com.squareup.okio:okio:2.10.0'
+
+    OkhttpLogging = 'com.squareup.okhttp3:logging-interceptor:3.14.9'
+
+    EventBus = 'org.greenrobot:eventbus:3.3.1'
+
+    AndroidEmoji2 = 'androidx.emoji2:emoji2:1.2.0'
+
+    DataBindingRunTime = 'androidx.databinding:databinding-runtime:8.0.2'
+
+    //Retrofit
+    Retrofit = 'com.squareup.retrofit2:retrofit:2.9.0'
+    RetrofitGson = 'com.squareup.retrofit2:converter-gson:2.9.0'
+    RetrofitMock = 'com.squareup.retrofit2:retrofit-mock:2.2.0'
+    RetrofitRxJava = 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+
+    //RxJava
+    RxJava = 'io.reactivex.rxjava2:rxjava:2.2.21'
+    RxAndroid = 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    //MMKV
+    MMKV = 'com.tencent:mmkv:1.2.15'
+
+    //权限
+    XXPermission = 'com.github.getActivity:XXPermissions:18.3'
+
+    //下拉刷新
+    SmartRefresh = 'io.github.scwang90:refresh-layout-kernel:2.1.0'
+    SmartRefreshHeader = 'io.github.scwang90:refresh-header-classics:2.1.0' //经典刷新头
+    SmartRefreshFooter = 'io.github.scwang90:refresh-footer-classics:2.1.0' //经典加载
+    SmartRefreshGoogleHeader = 'io.github.scwang90:refresh-header-material:2.1.0'    //谷歌刷新头
+
+    //阴影布局
+    ShadowLayout = 'com.github.lihangleo2:ShadowLayout:3.4.0'
+
+    //CameraX 相机
+    camerax_version = "1.2.1"
+    CameraCore = "androidx.camera:camera-core:${camerax_version}"
+    CameraCamera2 = "androidx.camera:camera-camera2:${camerax_version}"
+    CameraLifecycle = "androidx.camera:camera-lifecycle:${camerax_version}"
+    CameraView = "androidx.camera:camera-view:${camerax_version}"
+
+    //微信sdk
+    WeChatSdk = 'com.tencent.mm.opensdk:wechat-sdk-android:+'
+
+    Documentfile = 'androidx.documentfile:documentfile:1.0.1'
+
+    //google room 数据库
+    Room = 'androidx.room:room-runtime:2.4.0'
+    RoomAnnotationProcessor = 'androidx.room:room-compiler:2.4.0'
+
+    GSYVideoPlayerAll = 'com.github.CarGuo.GSYVideoPlayer:GSYVideoPlayer:v8.3.3-release-jitpack'
+    GSYVideoPlayerJava = 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-java:v8.3.3-release-jitpack'
+    GSYVideoPlayerJavaExo = 'com.github.CarGuo.GSYVideoPlayer:GSYVideoPlayer-exo2:v8.3.3-release-jitpack'
+
+}
