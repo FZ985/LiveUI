@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:width="40dp"
+        android:height="40dp">
+        <selector>
+            <item android:state_pressed="true">
+                <shape android:shape="oval">
+                    <solid android:color="@color/live_alpha_black_pressed" />
+                </shape>
+            </item>
+            <item android:state_pressed="false">
+                <shape android:shape="oval">
+                    <solid android:color="@color/live_alpha_black" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/live_alpha_black" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item
+        android:width="25dp"
+        android:height="25dp"
+        android:gravity="center">
+        <vector
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="1024"
+            android:viewportHeight="1024">
+            <path
+                android:fillColor="#FFB82C"
+                android:pathData="M943.6,238.1h-3.1L209.4,276H204.8l-29.7,-110.1c-1.5,-11.3 -13.3,-20 -24.6,-20H61.4c-13.3,0 -23,9.7 -26.1,21.5 -3.1,14.8 9.7,28.2 26.1,28.2h72.2l46.1,184.3c0.5,2.6 1,4.6 2.6,6.7L206.3,496.6c3.1,13.3 21.5,111.6 29.7,134.7 20,62.5 52.7,77.3 133.1,77.3h448.5c46.1,0 90.6,-36.4 100.4,-80.4L988.2,313.9c6.7,-54.3 -11.3,-73.7 -44.5,-75.8z" />
+            <path
+                android:fillColor="#FFB82C"
+                android:pathData="M330.8,820.2m-65.5,0a65.5,65.5 0,1 0,131.1 0,65.5 65.5,0 1,0 -131.1,0Z" />
+            <path
+                android:fillColor="#FFB82C"
+                android:pathData="M774.7,820.2m-65.5,0a65.5,65.5 0,1 0,131.1 0,65.5 65.5,0 1,0 -131.1,0Z" />
+            <path
+                android:fillColor="#FFEECC"
+                android:pathData="M396.3,532.5c0,13.3 -11.3,24.6 -24.6,24.6s-24.6,-11.3 -24.6,-24.6V400.9c0,-13.3 11.3,-24.6 24.6,-24.6s24.6,11.3 24.6,24.6V532.5zM577.5,532.5c0,13.3 -11.3,24.6 -24.6,24.6 -13.3,0 -24.6,-11.3 -24.6,-24.6V400.9c0,-13.3 11.3,-24.6 24.6,-24.6 13.3,0 24.6,11.3 24.6,24.6V532.5zM774.7,532.5c0,13.3 -11.3,24.6 -24.6,24.6 -13.3,0 -24.6,-11.3 -24.6,-24.6V400.9c0,-13.3 11.3,-24.6 24.6,-24.6 13.3,0 24.6,11.3 24.6,24.6V532.5z" />
+        </vector>
+
+    </item>
+</layer-list>

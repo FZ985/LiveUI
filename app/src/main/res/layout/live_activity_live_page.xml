@@ -1,6 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_test2" />
+
+    <io.uicomponents.switchpanel.view.PanelSwitchLayout
+        android:id="@+id/panel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:android11KeyboardFeature="true"
+        app:animationSpeed="standard">
+
+        <io.uicomponents.switchpanel.view.content.ConstraintContentContainer
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            app:edit_view="@id/live_edit_input">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_hor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.52" />
+
+            <FrameLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/btn_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/live_bottom_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp">
+
+                    <TextView
+                        android:id="@+id/say"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/live_bg_black_alpha_dp30"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/live_layer_emoji"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="#CCffffff"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:paddingHorizontal="10dp"
+                        android:text="@string/live_say_what"
+                        android:textColor="#CCffffff"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/car"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:clickable="true"
+                        android:src="@drawable/live_layer_shop_car" />
+
+                    <ImageView
+                        android:id="@+id/gift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:clickable="true"
+                        android:src="@drawable/live_layer_gift" />
+
+                    <ImageView
+                        android:id="@+id/more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:clickable="true"
+                        android:src="@drawable/live_layer_more_hor" />
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/edit_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:background="@color/live_bottom_edit_layout"
+                    android:paddingHorizontal="5dp"
+                    android:paddingTop="7.5dp"
+                    android:visibility="gone">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:minWidth="55dp"
+                        android:minHeight="36dp"
+                        android:paddingHorizontal="18dp"
+                        android:text="@string/live_send"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                    <ImageView
+                        android:id="@id/live_emoji_btn"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7.5dp"
+                        android:padding="1dp"
+                        android:src="@drawable/live_vec_input_emoji_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/send" />
+
+                    <io.live.ui.kit.widgets.LiveEditText
+                        android:id="@id/live_edit_input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7.5dp"
+                        android:background="@drawable/live_bg_input"
+                        android:hint="@string/live_say_what"
+                        android:maxLines="4"
+                        android:minHeight="40dp"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="5dp"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="#999999"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/live_emoji_btn" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+            <io.live.ui.kit.widgets.LiveRecyclerView
+                android:id="@+id/live_recycler"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="80dp"
+                android:fadingEdgeLength="20dp"
+                android:requiresFadingEdge="vertical"
+                app:layout_constraintBottom_toTopOf="@id/bottom_layout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/guide_hor" />
+
+        </io.uicomponents.switchpanel.view.content.ConstraintContentContainer>
+
+        <io.uicomponents.switchpanel.view.panel.PanelContainer
+            android:id="@+id/panel_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <io.uicomponents.switchpanel.view.panel.PanelView
+                android:id="@+id/panel_emotion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:panel_layout="@layout/live_layout_panel_emotion"
+                app:panel_trigger="@id/live_emoji_btn" />
+        </io.uicomponents.switchpanel.view.panel.PanelContainer>
+    </io.uicomponents.switchpanel.view.PanelSwitchLayout>
+
+</RelativeLayout>

@@ -45,5 +45,14 @@ dependencies {
     implementation AndroidConstraintlayout
     implementation AndroidRecyclerview
     implementation Glide
+    implementation AndroidViewModelKTX
+    implementation AndroidLiveDataKTX
+    implementation AndroidLifecycleRuntimeKTX
+
+    implementation AndroidEmoji2
+
+    implementation project(':UIComponents')
+
+    implementation QuickAdapter4
 
 }

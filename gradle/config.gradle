@@ -25,7 +25,7 @@ ext {
 
     AndroidLiveDataKTX = 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
 
-    AndroidLifecycleRuntimeKTX =  'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
+    AndroidLifecycleRuntimeKTX = 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
 
     Glide = 'com.github.bumptech.glide:glide:4.15.1'
 
@@ -88,4 +88,5 @@ ext {
     GSYVideoPlayerJava = 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-java:v8.3.3-release-jitpack'
     GSYVideoPlayerJavaExo = 'com.github.CarGuo.GSYVideoPlayer:GSYVideoPlayer-exo2:v8.3.3-release-jitpack'
 
+    QuickAdapter4 = 'io.github.cymchad:BaseRecyclerViewAdapterHelper4:4.1.4'
 }

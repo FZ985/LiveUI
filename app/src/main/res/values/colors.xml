@@ -4,4 +4,33 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="theme">#EC215C</color>
+
+    <color name="white_10">#1Affffff</color>
+    <color name="white_20">#33ffffff</color>
+    <color name="white_30">#4Dffffff</color>
+    <color name="white_40">#66ffffff</color>
+    <color name="white_50">#7Fffffff</color>
+    <color name="white_60">#99ffffff</color>
+    <color name="white_70">#B3ffffff</color>
+    <color name="white_80">#CCffffff</color>
+    <color name="white_90">#E6ffffff</color>
+
+    <color name="black_05">#10000000</color>
+    <color name="black_10">#1A000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_30">#4D000000</color>
+    <color name="black_40">#66000000</color>
+    <color name="black_50">#7F000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_70">#B3000000</color>
+    <color name="black_80">#CC000000</color>
+    <color name="black_90">#E6000000</color>
+
+
+    <color name="live_alpha_black">#4D000000</color>
+    <color name="live_alpha_black_20">#33000000</color>
+    <color name="live_alpha_black_pressed">#1A000000</color>
+    <color name="live_bottom_edit_layout">#FFFFFF</color>
+
+
 </resources>
